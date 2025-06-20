@@ -12,7 +12,7 @@
 | 構成                      | 分析フロー                                                                                                    | 目的                            |
 | ----------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------- |
 | **PCA → UMAP**          | `hinoki_snv (256D) → hinoki_pca (11D) → hinoki_pca_sc (11D) → UMAP (2D) → HDBSCAN`                       | 線形圧縮によるノイズ低減と非線形構造抽出の組み合わせ    |
-| **CAE → UMAP**          | `hinoki_snv (256D) → hinoki_cae (16D) → hinoki_cae_sc (16D) → UMAP (2D) → HDBSCAN`                       | 再構成誤差を指標としたデータ主導型の特徴抽出        |
+| **CAE → UMAP**          | `hinoki_snv (256D) → hinoki_cae (16D) → hinoki_cae_sc (16D) → UMAP (2D) → HDBSCAN`                       | 再構成誤差を指標とした特徴抽出        |
 | **CAE+Contrast → UMAP** | `hinoki_snv (256D) → hinoki_contrastivecae (16D) → hinoki_contrastivecae_sc (16D) → UMAP (2D) → HDBSCAN` | 再構成性と識別性を両立した特徴抽出による劣化クラスタの強調 |
 
 
