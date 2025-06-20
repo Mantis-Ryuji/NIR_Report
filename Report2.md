@@ -57,7 +57,7 @@ hdbscan = HDBSCAN(min_cluster_size=1000, min_samples=100)
   </tr>
 </table>
 
-`cluster_persistence` は、HDBSCAN（Hierarchical Density-Based Spatial Clustering of Applications with Noise）に特有の**クラスタの「安定性」指標**です。
+`cluster_persistence` は、HDBSCANに特有の**クラスタの「安定性」指標**です。
 
 ---
 
