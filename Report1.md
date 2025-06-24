@@ -34,9 +34,10 @@ pca.fit(hinoki_snv)
 cvr = np.cumsum(pca.explained_variance_ratio_)
 k = np.argmax(cvr >= 0.90) + 1
 ```
-<img src='Results\CVR.png'　width="500"><br>
 
-80%以上の累積寄与率を達成する最小次元数: $k=11$
+<img src='Results\CVR.png' width="500"><br>
+
+90%以上の累積寄与率を達成する最小次元数: $k=5$
 
 ```python
 n_dim = 5
